@@ -7,25 +7,25 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <div class="logo">
-          <img src="logo.html" alt="logo">
-        </div>
+        <a class="logo" href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
+        </a>
            <ul class="site-navigation">
              <li><a href="studio.html">Студия</a></li>
              <li><a href="clients.html">Клиенты</a></li>
-             <li class="site-navigation-current"><a href="shop.html">Магазин</a></li>
+             <li class="site-navigation-current">Магазин</a></li>
              <li><a href="contacts">Контакты</a></li>
            </ul>
            <ul class="user-navigation">
              <li><a href="shopping-basket">Корзина</a></li>
            </ul>
       </nav>
-        <h1 class="title">Магазин готовых шаблонов</h1>
     </header>
-    <main class="catalog">
+    <main class="container">
+        <h1 class="title">Магазин готовых шаблонов</h1>
       <section class="filter">
-        <h2 class="visually-hiden">Фильтр шаблонов</h2>
-        <p><b>стоимость:</b></p>
+        <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <b>стоимость:</b>
         <!-- фильтр стоимости??? -->
         <p><b>сетка:</b></p>
           <p><input type="radio" name="adaptive" value="adaptive" checked>Адаптивная</p>
@@ -40,43 +40,43 @@
           <p><input type="submit" value="Показать"></p>
       </section>
       <section class="sorting">
-        <h3 class="visually-hiden">Сортировка шаблонов</h3>
-          <p><b>сортировать:</b></p>
-          <p class="price-current"><a href="#">по цене</a></p>
-          <p><a href="#">по типу</a></p>
-          <p><a href="#">по названию</a></p>
+        <h2 class="visually-hidden">Сортировка шаблонов</h2>
+          <b>сортировать:</b>
+          <a href="#">по цене</a>
+          <a href="#">по типу</a>
+          <a href="#">по названию</a>
       </section>
       <section class="catalog">
-        <h2 class="visually-hiden">Каталог готовых шаблонов</h2>
+        <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <a href="#">
-              <img src="sedona.jpg" alt="Информационный сайт для туристов SEDONA">
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов SEDONA">
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
-              <img src="pink.jpg" alt="PINK - приложение для перекраски изображений">
+              <img src="img/img-pink.jpg" width="360" height="576" alt="PINK - приложение для перекраски изображений">
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
-              <img src="barbershop.jpg" alt="BARBERSHOP - стрижка бороды и усов">
+              <img src="img/img-barbershop.jpg" width="360" height="576" alt="BARBERSHOP - стрижка бороды и усов">
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
-              <img src="mishka.jpg" alt="MISHKA - Милые штуки ручной работы для дома">
+              <img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA - Милые штуки ручной работы для дома">
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
-              <img src="a+.jpg" alt="A+ - Учеба еще никогда не была такой интересной">
+              <img src="img/img-aplus.jpg" width="360" height="576" alt="A+ - Учеба еще никогда не была такой интересной">
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
-              <img src="kvast.jpg" alt="КВАСТ-Крафтовый квас всему голова!">
+              <img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ-Крафтовый квас всему голова!">
             </a>
           </li>
         </ul>
@@ -88,11 +88,10 @@
         </ul>
       </section>
     </main>
-    <footer class="Data-contacts">
-      <h3 class="visually-hiden">Контактные данные</h3>
+    <footer class="data-contacts">
+      <h2 class="visually-hidden">Контактные данные</h2>
       <div class="map">
-        <img src="point-location.html" alt="point-location">
-        <img src="map.html" alt="map">
+        <img src="img/map-marker.png" width="1440" height="416" alt="map">
         <div class="address">
           <p><b>nёrds design studio</b></p>
           <p>191186, Санкт-Петербург,<br>
@@ -104,13 +103,13 @@
       <div class="social-web">
         <ul class="social-list">
           <li class="vk"><a href="vk.html">
-            <img src="images/vk.png" alt="ВКонтакте">
+            <img src="img/vk-icon.png" width="79" height="79" alt="ВКонтакте">
           </a></li>
           <li class="facebook"><a href="facebook.html">
-            <img src="images/fb.png" alt="Facebook">
+            <img src="img/fb-icon.png" width="79" height="79" alt="Facebook">
           </a></li>
           <li class="instagram"><a href="instagram.html">
-            <img src="images/instagram.png" alt="Instagram">
+            <img src="img/insta-icon.png" width="79" height="79" alt="Instagram">
           </a></li>
         </ul>
       </div>
