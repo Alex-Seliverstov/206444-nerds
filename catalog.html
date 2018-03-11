@@ -10,15 +10,25 @@
         <a class="logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
         </a>
-           <ul class="site-navigation">
-             <li><a href="studio.html">Студия</a></li>
-             <li><a href="clients.html">Клиенты</a></li>
-             <li class="site-navigation-current">Магазин</a></li>
-             <li><a href="contacts">Контакты</a></li>
-           </ul>
-           <ul class="user-navigation">
-             <li><a href="shopping-basket">Корзина</a></li>
-           </ul>
+        <ul class="list-navigation">
+          <li class="item-navigation">
+            <a href="#">Студия</a>
+          </li>
+          <li class="item-navigation">
+            <a href="#">Клиенты</a>
+          </li>
+          <li class="item-navigation-current">
+            <a href="#">Магазин</a>
+          </li>
+          <li class="item-navigation">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="user-navigation">
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="container">
@@ -27,11 +37,11 @@
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <b>стоимость:</b>
         <!-- фильтр стоимости??? -->
-        <p><b>сетка:</b></p>
+        <b>сетка:</b>
           <p><input type="radio" name="adaptive" value="adaptive" checked>Адаптивная</p>
-          <p><input type="radio" name="not-fixed" value="">Фиксированная</p>
+          <p><input type="radio" name="not-fixed" value="not-fixed">Фиксированная</p>
           <p><input type="radio" name="rubber" value="not-rubber">Резиновая</p>
-        <p><b>особенности:</b></p>
+        <b>особенности:</b>
           <p><input type="checkbox" checked>Слайдер</p>
           <p><input type="checkbox">Блок преимуществ</p>
           <p><input type="checkbox" checked>Новости</p>
@@ -49,72 +59,114 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
         <ul class="catalog-list">
-          <li class="catalog-item">
+          <li class="catalog-item_img">
             <a href="#">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов SEDONA">
             </a>
+            <div class="catalog-item_info">
+              <b class="catalog-item_info-title">sedona</b>
+              <p class="catalog-item_info-text">Информационный сайт для туристов</p>
+              <a class="button" href="#">9900<span>руб.</span></a>
+            </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item_img">
             <a href="#">
               <img src="img/img-pink.jpg" width="360" height="576" alt="PINK - приложение для перекраски изображений">
             </a>
+            <div class="catalog-item_info">
+              <b class="catalog-item_info-title">pink app</b>
+              <p class="catalog-item_info-text">Продуктовый лендинг приложения для IOS и Android</p>
+              <a class="button" href="#">9900<span>руб.</span></a>
+            </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item_img">
             <a href="#">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="BARBERSHOP - стрижка бороды и усов">
             </a>
+            <div class="catalog-item_info">
+              <b class="catalog-item_info-title">barbershop<span>borodinski</span></b>
+              <p class="catalog-item_info-text">Салон красоты для мужчин</p>
+              <a class="button" href="#">9900<span>руб.</span></a>
+            </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item_img">
             <a href="#">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA - Милые штуки ручной работы для дома">
             </a>
+            <div class="catalog-item_info">
+              <b class="catalog-item_info-title">mishka</b>
+              <p class="catalog-item_info-text">Интернет-магазин вещей ручной работы для дома</p>
+              <a class="button" href="#">9900<span>руб.</span></a>
+            </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item_img">
             <a href="#">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="A+ - Учеба еще никогда не была такой интересной">
             </a>
+            <div class="catalog-item_info">
+              <b class="catalog-item_info-title">aplus</b>
+              <p class="catalog-item_info-text">Лендинг обучающего сайта</p>
+              <a class="button" href="#">9900<span>руб.</span></a>
+            </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item_img">
             <a href="#">
               <img src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ-Крафтовый квас всему голова!">
             </a>
+            <div class="catalog-item_info">
+              <b class="catalog-item_info-title">kvast</b>
+              <p class="catalog-item_info-text">Интернет-магазин крафтового кваса</p>
+              <a class="button" href="#">9900<span>руб.</span></a>
+            </div>
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Следующая</a></li>
+          <li class="pagination-list_item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-list_item"><a href="#">2</a></li>
+          <li class="pagination-list_item"><a href="#">3</a></li>
+          <li class="pagination-list_item"><a href="#">Следующая</a></li>
         </ul>
       </section>
     </main>
-    <footer class="data-contacts">
-      <h2 class="visually-hidden">Контактные данные</h2>
-      <div class="map">
-        <img src="img/map-marker.png" width="1440" height="416" alt="map">
-        <div class="address">
-          <p><b>nёrds design studio</b></p>
-          <p>191186, Санкт-Петербург,<br>
-             ул. Б. Конюшенная, д 19/8</p>
-          <p>тел. +7(812) 275-75-75</p>
-          <p class="post"><a href="post@nёrd's.ru">Напишите нам</a></p>
+    <footer class="footer">
+      <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+        <div class="map">
+           <img src="img/map-marker.png" width="1440" height="416" alt="map">
         </div>
-      </div>
-      <div class="social-web">
-        <ul class="social-list">
-          <li class="vk"><a href="vk.html">
-            <img src="img/vk-icon.png" width="79" height="79" alt="ВКонтакте">
-          </a></li>
-          <li class="facebook"><a href="facebook.html">
-            <img src="img/fb-icon.png" width="79" height="79" alt="Facebook">
-          </a></li>
-          <li class="instagram"><a href="instagram.html">
-            <img src="img/insta-icon.png" width="79" height="79" alt="Instagram">
-          </a></li>
-        </ul>
-      </div>
-      <p><b>Давайте дружить, это выгодно!</b></p>
-      <p>Скидки 10% для друзей из социальных сетей.</p>
+        <div class="contacts-info">
+            <b class="contacts-info_title">nёrds design studio</b>
+            <p class="contacts-info_address">
+              191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д 19/8
+            </p>
+            <p class="contacts-info_phone">тел. +7(812) 275-75-75</p>
+            <a class="contacts-link" href="#">Напишите нам</a>
+        </div>
+      </section>
+      <section class="social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <div class="social-content">
+          <ul class="social-list">
+            <li class=social-list_item>
+              <a href=#>
+                <img src="img/vk-icon.png" width="79" height="79" alt="ВКонтакте">
+              </a>
+            </li>
+            <li class="social-list_item">
+              <a href=#>
+                <img src="img/fb-icon.png" width="79" height="79" alt="Facebook">
+              </a>
+            </li>
+            <li class="social-list_item">
+              <a href="#">
+                <img src="img/insta-icon.png" width="79" height="79" alt="Instagram">
+              </a>
+            </li>
+          </ul>
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидки 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
