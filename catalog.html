@@ -42,9 +42,9 @@
           <p><input type="radio" name="not-fixed" value="not-fixed">Фиксированная</p>
           <p><input type="radio" name="rubber" value="not-rubber">Резиновая</p>
         <b>особенности:</b>
-          <p><input type="checkbox" checked>Слайдер</p>
+          <p><input type="checkbox" checked class="visually-hidden">Слайдер</p>
           <p><input type="checkbox">Блок преимуществ</p>
-          <p><input type="checkbox" checked>Новости</p>
+          <p><input type="checkbox" checked class="visually-hidden">Новости</p>
           <p><input type="checkbox">Галерея</p>
           <p><input type="checkbox">Корзина</p>
           <p><input type="submit" value="Показать"></p>
@@ -84,7 +84,7 @@
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="BARBERSHOP - стрижка бороды и усов">
             </a>
             <div class="catalog-item_info">
-              <b class="catalog-item_info-title">barbershop<span>borodinski</span></b>
+              <b class="catalog-item_info-title">barbershop<span> borodinski</span></b>
               <p class="catalog-item_info-text">Салон красоты для мужчин</p>
               <a class="button" href="#">9900<span>руб.</span></a>
             </div>
@@ -132,7 +132,7 @@
       <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
         <div class="map">
-           <img src="img/map-marker.png" width="1440" height="416" alt="map">
+           <img src="img/map-marker.png" width="1440" height="416" alt="Офис дизайн-студии Нёрдс находится по адресу: город Санкт-Петербург, ул. Б. Конюшенная, д 19/8">
         </div>
         <div class="contacts-info">
             <b class="contacts-info_title">nёrds design studio</b>
@@ -143,6 +143,25 @@
             <a class="contacts-link" href="#">Напишите нам</a>
         </div>
       </section>
+      <!-- Форма обратной связи -->
+      <article class="letter">
+        <b>Напишите нам</b>
+        <p><label>
+            <b>Ваше имя:</b>
+            <input type="text" name="name" value="Имя Фамилия">
+          </label>
+        </p>
+        <p><label>
+            <b>Ваш e-mail:</b>
+            <input type="email" name="email" value="email@example.com">
+          </label>
+        </p>
+        <p>
+          <b>Текст письма:</b>
+          <textarea name="comments" rows="5">В свободной форме</textarea>
+        </p>
+        <input type="submit">
+      </article>
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <div class="social-content">
