@@ -154,7 +154,7 @@
       <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="map">
-            <img src="img/map-marker.png" width="1440" height="416" alt="map">
+             <img src="img/map-marker.png" width="1440" height="416" alt="Офис дизайн-студии Нёрдс находится по адресу: город Санкт-Петербург, ул. Большая Конюшенная, д 19/8">
           </div>
           <div class="contacts-info">
               <b class="contacts-info_title">nёrds design studio</b>
@@ -166,23 +166,31 @@
           </div>
       </section>
       <!-- Форма обратной связи -->
-      <article class="letter">
-        <b>Напишите нам</b>
-        <p><label>
-            <b>Ваше имя:</b>
-            <input type="text" name="name" value="Имя Фамилия">
-          </label>
-        </p>
-        <p><label>
-            <b>Ваш e-mail:</b>
-            <input type="email" name="email" value="email@example.com">
-          </label>
-        </p>
-        <p>
-          <b>Текст письма:</b>
-          <textarea name="comments" rows="5">В свободной форме</textarea>
-        </p>
-        <input type="submit">
+      <article class="feedback">
+        <h2 class="visually-hidden">Обратная связь</h2>
+      <form class="feedback" action="#" method="post">
+        <fieldset>
+          <legend>Напишите нам</legend>
+          <p>
+            <label>
+              <b>Ваше имя:</b>
+              <input type="text" name="name" value="Имя Фамилия">
+            </label>
+          </p>
+          <p>
+            <label>
+              <b>Ваш e-mail:</b>
+              <input type="email" name="email" value="email@example.com">
+            </label>
+          </p>
+          <p>
+            <b>Текст письма:</b>
+            <textarea name="comments" rows="5">В свободной форме</textarea>
+          </p>
+          <input type="submit">
+        </fieldset>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
       </article>
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
