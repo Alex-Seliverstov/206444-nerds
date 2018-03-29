@@ -34,31 +34,24 @@
       </nav>
     </header>
     <main class="main-container">
-        <h1 class="title">Магазин готовых шаблонов</h1>i
+        <h1 class="title">Магазин готовых шаблонов</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter-form" action="#" method="post">
         <fieldset>
           <legend>стоимость:</legend>
           <ul class="filter-list_cost">
-            <!-- фильтр стоимости??? -->
-              <li>
-                <label for="">
-                <input type="range" name="radio" min="0" max="15000" value="">
-                </label>
-              </li>
-              <li>
-                <label for="">
-                  от
-                  <input type="number" name="min-cost" value="0">
-                </label>
-              </li>
-              <li>
-                <label for="">
-                  до
-                  <input type="number" name="max-cost" value="15000">
-                </label>
-              </li>
+            <div class="range-filter">
+             <div class="range-controls">
+                <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+             </div>
+             <div class="price-controls">
+                от <input class="min-price" type="text" value="5 000">
+                до <input class="max-price" type="text" value="15 000">
+            </div>
+           </div>
           </ul>
         </fieldset>
         <fieldset>
